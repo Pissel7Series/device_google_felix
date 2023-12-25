@@ -24,10 +24,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_SYSTEM_SERVER_JARS += \
     system_ext:felix-services
 
-# HBM
-PRODUCT_PACKAGES += \
-    HbmSVManagerOverlayFelix
-
 # IWLAN
 PRODUCT_PACKAGES += \
     Iwlan

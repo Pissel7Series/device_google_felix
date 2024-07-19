@@ -18,4 +18,8 @@
 <resources>
     <!-- Default paddings for content around the corners. -->
     <dimen name="rounded_corner_content_padding">14dp</dimen>
+
+    <dimen name="status_bar_padding_start">0dp</dimen>
+    <dimen name="status_bar_padding_end">0dp</dimen>
+    <dimen name="status_bar_padding_top">0dp</dimen>
 </resources>

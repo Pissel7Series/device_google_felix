@@ -6,6 +6,9 @@
 
 DEVICE_PACKAGE_OVERLAYS += $(DEVICE_PATH)/overlay-lineage
 
+# Always use scudo for memory allocator
+PRODUCT_USE_SCUDO := true
+
 # ANGLE - Almost Native Graphics Layer Engine
 PRODUCT_PACKAGES += \
     ANGLE
@@ -28,6 +31,15 @@ PRODUCT_PACKAGES += \
 # IWLAN
 PRODUCT_PACKAGES += \
     Iwlan
+
+# Face Unlock
+-include vendor/google/faceunlock/config.mk
+ 
+# PixelParts
+include packages/apps/PixelParts/device.mk
+ 
+# Viper4AndroidFx
+include packages/apps/ViPER4AndroidFX/config.mk
 
 # wireless_charger HAL service
 include device/google/gs-common/wireless_charger/wireless_charger.mk
